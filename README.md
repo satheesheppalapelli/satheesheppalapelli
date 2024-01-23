@@ -1,10 +1,5 @@
-- 👋 Hi, I’m @satheesheppalapelli
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-satheesheppalapelli/satheesheppalapelli is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 👋 Hi, I’m Satheesh Eppalapelli
+- 👀 I’m interested in Machine learning.
+- 🌱 I’m currently learning Machine Learning.
+- 💞️ I’m looking to collaborate on Machine Learning.
+- 📫 How to reach me [email](eppalapellisatheesh21@gmail.com)
