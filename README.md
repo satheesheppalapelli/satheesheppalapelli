@@ -10,34 +10,31 @@ Welcome to my GitHub profile! My name is I’m Satheesh Eppalapelli, and I'm thr
 
 ---
 
-## About Me ℹ️
+## About Me
 
-- 🎓 I'm a Computer Science Grad student Software Enigneer with over 3 years experience, my academic pursuits with my passion for sharing knowledge and experiences.
-- 💻 My journey in programming began in bachelor's when I took an introductory Java course. Since then, I've pursued programming with fervor.
-- 🧑‍🤝‍🧑 I'm deeply committed to mentorship and helping others navigate the complexities of the tech world. Having experienced the challenges of real-world experience, technical interviews, and university coursework, I'm eager to support fellow professional in their tech journeys.
+🚀 I have over 3 years of experience in building robust and scalable software solutions. My expertise lies in Java (J2EE), Spring Boot, microservices, and cloud technologies like AWS.
 
-## What I'm Currently Working On 🚀
+💻 I love working on challenging projects and exploring new technologies. Whether it's designing API integrations, developing spring boot applications, setting up CI/CD pipelines, or diving into frontend development with ReactJS, I'm always up for a new adventure in coding.
 
-- 💡 Developing my personal brand on LinkedIn, offering insights into early career tips, job application strategies, and time management.
-- 💡 Peers on utilizing LinkedIn for job searches and content creation.
-- 💡 Strengthening my skills in Data Structures and Algorithms, backend development (Java, Springboot, Microservices, JavaScript, relational databases), and cloud services to pursue opportunities at top tech companies post-graduation.
+## What I'm Currently Working On
 
-## Fun Facts 😁
+🔧 Currently, I'm working on refining my skills in containerization with Docker and orchestration with Kubernetes. I'm also diving deeper into frontend development, experimenting with new features in ReactJS.
 
-- 🎵 Prior to my venture into computer science, I aspired to be a professional cricket player.
-- 💬 I'm an enthusiastic language learner. I’m currently learning Machine Learning. I’m looking to collaborate on peer Machine Learners.
+🌱 Currently, I'm also learning Salesforce to expand my skillset and explore new opportunities in the CRM domain.
 
-Feel free to explore my repositories and reach out if you have any questions or just want to connect! Let's learn and grow together. 🌱
+## Let's Connect
+
+📫 Feel free to reach out to me via email at eppalapellisatheesh21@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/satheesheppalapelli). I'm always open to discussing new opportunities, collaborating on projects, or just chatting about tech!
+
+## Fun Facts
+
+🏆 I was recognized as the Best Star Performer during my time at Mavenir Systems Pvt Ltd.
+
+📚 I'm an enthusiastic language learner. I’m currently learning Machine Learning. I’m looking to collaborate on peer Machine Learners, and its applications in software engineering.
 
 ---
 
-Connect with me on social media!
-
-<div id="badges">
-  <a href="https://www.linkedin.com/in/satheesheppalapelli/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-</div>
+Feel free to explore my repositories, , open issues, or send pull requests and reach out if you have any questions or just want to connect! Let's learn and grow together🌱 and Let's build something awesome together! 😊
 
 ---
 
