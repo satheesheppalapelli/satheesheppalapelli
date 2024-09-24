@@ -12,7 +12,7 @@ Welcome to my GitHub profile! My name is I’m Satheesh Eppalapelli, and I'm thr
 
 ## About Me
 
-🚀 I have over 3 years of experience in building robust and scalable software solutions. My expertise lies in Java/J2EE, Servlets, JSP, Spring, Hibernate, Spring Boot, RESTFul, Microservices architecture with AWS cloud, Docker and Kubernetes.
+🚀 I have over 4 years of experience in building robust and scalable software solutions. My expertise lies in Java/J2EE, Servlets, JSP, Spring, Hibernate, Spring Boot, RESTFul, Microservices architecture with AWS cloud, Docker and Kubernetes.
 
 💻 I love working on challenging projects and exploring new technologies. Whether it's designing API integrations, developing spring boot applications, setting up CI/CD pipelines, or diving into frontend development with ReactJS, I'm always up for a new adventure in coding.
 
@@ -24,7 +24,7 @@ Welcome to my GitHub profile! My name is I’m Satheesh Eppalapelli, and I'm thr
 
 ## Let's Connect
 
-📫 Feel free to reach out to me via email at eppalapellisatheesh21@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/satheesheppalapelli). I'm always open to discussing new opportunities, collaborating on projects, or just chatting about tech!
+📫 Feel free to reach out to me via email at eppalapellisatheesh94@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/satheesheppalapelli). I'm always open to discussing new opportunities, collaborating on projects, or just chatting about tech!
 
 ## Fun Facts
 
