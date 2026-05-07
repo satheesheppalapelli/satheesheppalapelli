@@ -34,6 +34,7 @@ const Home = () => {
             I build scalable applications with Java, Spring Boot, microservices, kafka, Sql, React js and cloud-native architectures.
             I also enjoy front-end work with React and crafting clean user experiences.
           </p>
+                    {/* <div className="home-meta">Previously at <strong>Infosys</strong></div> */}
           <div className="home-buttons">
             <a href="#what-i-do" className="btn primary">What I Do</a>
             <a href="#projects" className="btn secondary">My Projects</a>
