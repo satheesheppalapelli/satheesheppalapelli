@@ -14,7 +14,7 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 
 🚀 **5+ years slaying the software game**, dropping scalable solutions across **backend, frontend, and cloud realms**.  
 💻 I build **Spring Boot microservices**, craft **RESTful APIs**, and vibe with **AWS/GCP**, **Docker**, and **Kubernetes**.  
-🌱 Obsessed with **ReactJS frontend magic** and exploring **Machine Learning hacks**.  
+🌱 Obsessed with **ReactJS frontend magic**, **Machine Learning hacks**, **Agentic AI ** and **LLM Integration**.  
 
 ---
 
@@ -35,40 +35,36 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 
 ## Let's Link Up
 
-📫 [Email](mailto:eppalapellisatheesh94@gmail.com)  
+📫 [Email](mailto:eppalapellisatheesh21@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/satheesheppalapelli)  
-💻 [GitHub](https://github.com/satheesheppalelli)  
+💻 [GitHub](https://github.com/satheesheppalapelli)  
 
 ---
 
 ### My Tech Stack Arsenal:
 
-- **Languages:** Java, Go, Python  
+- **Languages:** Java, Go, Python, Sql
 - **Backend:** Spring Boot, Microservices, Apache Kafka, Apache Camel, REST APIs  
 - **Frontend:** ReactJS, Node Js, JavaScript, HTML, CSS3, Bootstrap
 - **Cloud & DevOps:** AWS, GCP, Docker, Kubernetes, CI/CD  
-- **Databases:** PostgreSQL, Oracle  
-- **Testing & QA:** JUnit, Mockito, Karate
-- **Tools & Others:** Git, Maven, Gradle, Postman, Swagger UI, Intellij, Jira, Confluence, Service Now
+- **Databases:** PostgreSQL, Oracle
 
-<div align="left">
-<img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" **alt="Python" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/go/go-original-wordmark.svg" title="GoLang" **alt="GoLang" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" title="Springboot" **alt="Springboot" width="40" height="40"/>&nbsp; <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg" title="Postgresql" alt="Postgresql" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/liquibase/liquibase-original-wordmark.svg" title="Liquibase" alt="Liquibase" width="40" height="40"/>&nbsp; <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/maven/maven-original-wordmark.svg" title="Maven" **alt="Maven" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/gradle/gradle-original-wordmark.svg" title="Gradle" **alt="Gradle" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/googlecloud/googlecloud-original-wordmark.svg" title="GCP" **alt="GCP" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" title="AWS" **alt="AWS" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg" title="Docker" **alt="Docker" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/kubernetes/kubernetes-original-wordmark.svg" title="Kubernetes" **alt="Kubernetes" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/postman/postman-original.svg" title="Postman" **alt="Postman" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title="Linux" **alt="Linux" width="40" height="40"/>&nbsp; 
-<img src="https://github.com/devicons/devicon/blob/master/icons/windows11/windows11-original.svg" title="Windows" **alt="Windows" width="40" height="40"/>&nbsp;
-</div>
+---
+
+## Portfolio
+
+Check out my portfolio at [https://satheesheppalapelli.github.io/satheesheppalapelli/](https://satheesheppalapelli.github.io/satheesheppalapelli/)
+
+### Local development
+```bash
+npm install
+npm run dev
+```
+
+### Run tests
+```bash
+npm test
+```
+
+### Resume PDF
+Add your ATS-friendly resume file at `public/resume.pdf` and the navbar button will download it directly.
