@@ -11,17 +11,19 @@ const Navbar = () => {
     >
       <div className="nav-container">
         <div className="nav-logo">
-          <a href="#hero">Satheesh</a>
+          <a href="#home">Satheesh Eppalapelli 's Portfolio</a>
         </div>
         <ul className="nav-links">
-          <li><a href="#hero">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#what-i-do">What I Do</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#highlights">Highlights</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <a
-          href="/resume.pdf"
+          href="resume.pdf"
           className="btn secondary resume-button"
           target="_blank"
           rel="noopener noreferrer"

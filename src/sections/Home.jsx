@@ -2,18 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
-const Hero = () => {
+const Home = () => {
   return (
-    <section id="hero" className="hero-section">
-      <div className="container hero-container">
+    <section id="home" className="home-section">
+      <div className="container home-container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="hero-content"
+          className="home-content"
         >
           <h1>Hi, I'm Satheesh Eppalapelli</h1>
-          <span className="hero-title">
+          <span className="home-title">
             <TypeAnimation
               sequence={[
                 'Software Engineer',
@@ -30,12 +30,12 @@ const Hero = () => {
               repeat={Infinity}
             />
           </span>
-          <p className="hero-description">
+          <p className="home-description">
             I build scalable applications with Java, Spring Boot, microservices, and cloud-native architectures.
             I also enjoy front-end work with React and crafting clean user experiences.
           </p>
-          {/* <div className="hero-meta">Previously at <strong>TCS</strong></div> */}
-          <div className="hero-buttons">
+          {/* <div className="home-meta">Previously at <strong>TCS</strong></div> */}
+          <div className="home-buttons">
             <a href="#what-i-do" className="btn primary">What I Do</a>
             <a href="#projects" className="btn secondary">My Projects</a>
           </div>
@@ -45,7 +45,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="hero-image"
+          className="home-image"
         >
           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Working at desk" />
         </motion.div>
@@ -54,4 +54,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
