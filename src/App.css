@@ -246,7 +246,7 @@ section h2 {
 .what-section .card-grid,
 .skills-section .skills-grid,
 .projects-section .projects-grid,
-.highlights-section .highlight-grid {
+.quick-facts .facts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.75rem;
@@ -255,7 +255,7 @@ section h2 {
 .card,
 .skill-category,
 .project-card,
-.highlight-card,
+.fact-card,
 .contact-card {
   background: var(--surface);
   border: 1px solid rgba(110, 75, 255, 0.12);
@@ -265,7 +265,7 @@ section h2 {
 }
 
 .card-icon,
-.highlight-icon {
+.icon-box {
   width: 44px;
   height: 44px;
   display: inline-flex;
@@ -385,7 +385,7 @@ section h2 {
   .what-section .card-grid,
   .skills-section .skills-grid,
   .projects-section .projects-grid,
-  .highlights-section .highlight-grid {
+  .quick-facts .facts-grid {
     grid-template-columns: 1fr;
   }
 

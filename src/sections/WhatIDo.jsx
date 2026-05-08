@@ -1,29 +1,62 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaLaptopCode, FaServer, FaDatabase, FaProjectDiagram } from 'react-icons/fa';
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaLaptopCode,
+  FaServer,
+  FaDatabase,
+  FaProjectDiagram,
+} from "react-icons/fa";
 
 const WhatIDo = () => {
   const items = [
     {
-      title: 'Frontend Development',
-      description: 'Responsive and interactive UI using React, HTML, and CSS for modern web experiences.',
-      icon: <FaLaptopCode />
+      title: "Enterprise Backend Systems",
+      description:
+        "Design and build scalable microservices using Java, Spring Boot, Node.js and J2EE to power high-volume enterprise platforms processing millions of transactions.",
+      icon: <FaServer />,
     },
     {
-      title: 'Backend APIs',
-      description: 'RESTful API design with Spring Boot and Java for secure, scalable applications.',
-      icon: <FaServer />
+      title: "Event-Driven Architecture",
+      description:
+        "Build real-time distributed systems using Kafka and GCP Pub/Sub for asynchronous processing, streaming pipelines, and low-latency event handling.",
+      icon: <FaProjectDiagram />,
     },
     {
-      title: 'Database Design',
-      description: 'Optimized schemas and integrations with PostgreSQL, Oracle, and relational storage.',
-      icon: <FaDatabase />
+      title: "Cloud & DevOps Engineering",
+      description:
+        "Deploy cloud-native applications on AWS and GCP using Docker, Kubernetes, Jenkins, and GitHub Actions with CI/CD automation and scalable infrastructure.",
+      icon: <FaLaptopCode />,
     },
     {
-      title: 'Full-Stack Projects',
-      description: 'Complete solutions from frontend to backend with deployment-ready architectures.',
-      icon: <FaProjectDiagram />
-    }
+      title: "API & System Integration",
+      description:
+        "Develop REST and GraphQL APIs and integrate enterprise systems like IBM Sterling and JDE for seamless cross-platform data synchronization.",
+      icon: <FaServer />,
+    },
+    {
+      title: "Database & Performance Engineering",
+      description:
+        "Optimize MongoDB, PostgreSQL, Oracle, and MySQL databases with indexing, query tuning, and schema design for high-performance data-intensive systems.",
+      icon: <FaDatabase />,
+    },
+    {
+      title: "Frontend Collaboration & Full-Stack Delivery",
+      description:
+        "Collaborate with React and Angular teams to build responsive, real-time dashboards and deliver end-to-end full-stack solutions from UI to backend systems.",
+      icon: <FaLaptopCode />,
+    },
+    {
+      title: "Reliability & Observability",
+      description:
+        "Implement resilience patterns like Circuit Breaker and Retry, with centralized logging, monitoring, and tracing using ELK, Log4j, and cloud tools.",
+      icon: <FaProjectDiagram />,
+    },
+    {
+      title: "Agile Delivery & Leadership",
+      description:
+        "Work in Agile/Scrum environments with architects, QA, and DevOps teams to deliver scalable, secure, and business-critical enterprise solutions.",
+      icon: <FaProjectDiagram />,
+    },
   ];
 
   return (
@@ -36,9 +69,13 @@ const WhatIDo = () => {
         >
           What I Do
         </motion.h2>
+
         <p className="section-description">
-          I help teams ship product-ready applications with clean architecture, polished UI, and scalable backend services.
+          Senior Software Engineer specializing in distributed systems,
+          cloud-native architectures, and scalable enterprise applications
+          processing millions of transactions.
         </p>
+
         <div className="card-grid">
           {items.map((item) => (
             <motion.div
@@ -46,6 +83,7 @@ const WhatIDo = () => {
               initial={{ opacity: 0, y: 32 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55 }}
+              whileHover={{ scale: 1.03 }}
               className="card"
             >
               <div className="card-icon">{item.icon}</div>
