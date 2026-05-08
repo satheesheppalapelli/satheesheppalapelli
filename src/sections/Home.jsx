@@ -54,9 +54,9 @@ const Home = () => {
             <button className="home-btn senary" onClick={() => navigate("/earlyspark")}>Early Spark</button>
 
             <a
-              href="/Satheesh_Eppalapelli_Resume.pdf"
+              // href="/Satheesh_Eppalapelli_Resume.pdf"
               // href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
-              // href={`${process.env.PUBLIC_URL}/Satheesh_Eppalapelli_Resume.pdf`}
+              href={`${process.env.PUBLIC_URL}/Satheesh_Eppalapelli_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="home-btn septenary"
