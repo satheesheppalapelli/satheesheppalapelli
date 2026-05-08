@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/',
+  base: '/',
   build: {
     minify: false,
   },
@@ -12,4 +12,4 @@ export default defineConfig({
   //   include: ['tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   //   environment: 'jsdom',
   // },
-})
+})  

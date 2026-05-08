@@ -49,6 +49,7 @@ const Skills = () => {
       "ReactJS",
       "Angular",
       "Redux",
+      "RxJS",
       "JavaScript",
       "TypeScript",
       "HTML5",
