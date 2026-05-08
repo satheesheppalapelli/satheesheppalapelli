@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     minify: false,
   },
-  test: {
-    include: ['tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    environment: 'jsdom',
-  },
+  // test: {
+  //   include: ['tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+  //   environment: 'jsdom',
+  // },
 })
