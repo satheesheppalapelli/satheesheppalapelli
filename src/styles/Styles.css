@@ -578,6 +578,7 @@ z-index: 11;
 .home-btn.quaternary { background-color: #17a2b8; }
 .home-btn.quinary { background-color: #6f42c1; }
 .home-btn.senary { background-color: #e83e8c; }
+.home-btn.septenary { background-color: #343a40; }
 
 .home-btn:hover {
   transform: translateY(-3px);

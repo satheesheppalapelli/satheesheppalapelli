@@ -52,6 +52,15 @@ const Home = () => {
             <button className="home-btn quaternary" onClick={() => navigate("/education")}>Education</button>
             <button className="home-btn quinary" onClick={() => navigate("/certification")}>Certification</button>
             <button className="home-btn senary" onClick={() => navigate("/earlyspark")}>Early Spark</button>
+
+            <a
+              href="/Satheesh_Eppalapelli_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home-btn septenary"
+            >
+              Resume
+            </a>
           </motion.div>
         </motion.div>
 
