@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useResponsive from "../hooks/useResponsive";
 
 const Skills = () => {
+  const layout = useResponsive();
   const skills = {
     "Programming Languages": [
       "Java (J2EE)",
@@ -135,7 +137,7 @@ const Skills = () => {
   const entries = Object.entries(skills);
 
   return (
-    <section id="skills" className="skills-section">
+    <section id="skills" className="skills-section" data-layout={layout}>
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

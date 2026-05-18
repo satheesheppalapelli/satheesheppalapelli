@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Certification.css";
 import { Award } from "lucide-react";
+import useResponsive from "../hooks/useResponsive";
 
 const certifications = [
   {
@@ -15,8 +16,10 @@ const certifications = [
 ];
 
 const Certification = () => {
+  const layout = useResponsive();
+
   return (
-    <section className="certification-section">
+    <section className="certification-section" data-layout={layout}>
       <h2 className="certification-title">Certifications</h2>
 
       <p className="certification-intro">

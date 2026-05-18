@@ -2,15 +2,19 @@ import React from "react";
 import "../styles/About.css";
 import { motion } from "framer-motion";
 import Experience from "./Experience";
+import useResponsive from "../hooks/useResponsive";
 import Education from "./Education";
 import Certification from "./Certification";
 import EarlySpark from "./EarlySpark";
 
 const About = () => {
+  const layout = useResponsive();
+
   return (
     <motion.section
       id="about"
       className="about-section"
+      data-layout={layout}
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -40 }}

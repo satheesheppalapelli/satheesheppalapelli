@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Styles.css";
+import useResponsive from "../hooks/useResponsive";
 
 const educationData = [
   {
@@ -26,8 +27,10 @@ const educationData = [
 ];
 
 const Education = () => {
+  const layout = useResponsive();
+
   return (
-    <section className="education-section" id="education">
+    <section className="education-section" id="education" data-layout={layout}>
       <h2 className="section-title">Education</h2>
 
       <div className="education-container">

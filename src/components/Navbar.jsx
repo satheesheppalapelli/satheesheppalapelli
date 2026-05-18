@@ -31,10 +31,6 @@ const Navbar = () => {
           <li>
             <Link to="/highlights">Highlights</Link>
           </li>
-
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
         </ul>
       </div>
     </motion.nav>

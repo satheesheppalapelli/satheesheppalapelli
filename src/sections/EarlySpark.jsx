@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Styles.css";
 import "../styles/Projects.css";
+import useResponsive from "../hooks/useResponsive";
 
 const earlySparkItems = [
   // Add future achievements here
@@ -15,8 +16,10 @@ const earlySparkItems = [
 ];
 
 const EarlySpark = () => {
+  const layout = useResponsive();
+
   return (
-    <section id="early-spark" className="projects-section">
+    <section id="early-spark" className="projects-section" data-layout={layout}>
       <h2 className="section-title">Beyond the Resume</h2>
 
       <div className="projects-container">

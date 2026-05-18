@@ -7,10 +7,13 @@ import {
   FaKaggle,
   FaCode,
 } from "react-icons/fa";
+import useResponsive from "../hooks/useResponsive";
 
 const Contact = () => {
+  const layout = useResponsive();
+
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section" data-layout={layout}>
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}

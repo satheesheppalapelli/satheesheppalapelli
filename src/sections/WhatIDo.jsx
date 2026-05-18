@@ -6,8 +6,10 @@ import {
   FaDatabase,
   FaProjectDiagram,
 } from "react-icons/fa";
+import useResponsive from "../hooks/useResponsive";
 
 const WhatIDo = () => {
+  const layout = useResponsive();
   const items = [
     {
       title: "Enterprise Backend Systems",
@@ -60,7 +62,7 @@ const WhatIDo = () => {
   ];
 
   return (
-    <section id="what-i-do" className="what-section">
+    <section id="what-i-do" className="what-section" data-layout={layout}>
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}

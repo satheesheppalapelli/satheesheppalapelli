@@ -53,17 +53,18 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 
 ## Portfolio
 
-Check out my portfolio at [https://satheesheppalapelli.github.io/satheesheppalapelli/](https://satheesheppalapelli.github.io/satheesheppalapelli/)
+Check out my portfolio at [https://satheesheppalapelli.github.io/](https://satheesheppalapelli.github.io)
 
 ### Local development
 ```bash
 npm install
+npm run build
 npm run dev
 ```
 
 ### Run tests
 ```bash
-npm test
+npm test --silent
 ```
 
 ### Resume PDF

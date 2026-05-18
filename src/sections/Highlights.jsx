@@ -12,6 +12,7 @@ import {
   Target,
   Database,
 } from "lucide-react";
+import useResponsive from "../hooks/useResponsive";
 
 const facts = [
   {
@@ -83,8 +84,10 @@ const cardVariants = {
 };
 
 const Highlights = () => {
+  const layout = useResponsive();
+
   return (
-    <section id="highlights" className="quick-facts">
+    <section id="highlights" className="quick-facts" data-layout={layout}>
       <div className="container">
         {/* Title */}
         <motion.h2

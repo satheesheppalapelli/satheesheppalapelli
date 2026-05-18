@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import useResponsive from "../hooks/useResponsive";
 
 const Projects = () => {
+  const layout = useResponsive();
   const projects = [
     {
       title: "Smart Mobility",
@@ -33,7 +35,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects-section">
+    <section id="projects" className="projects-section" data-layout={layout}>
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
