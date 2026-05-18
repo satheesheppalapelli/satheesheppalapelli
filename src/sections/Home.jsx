@@ -104,7 +104,7 @@ const Home = () => {
               >
                 Early Spark
               </button>
-
+{/* 
               <a
                 href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
                 target="_blank"
@@ -112,7 +112,7 @@ const Home = () => {
                 className="home-btn septenary"
               >
                 Resume
-              </a>
+              </a> */}
             </motion.div>
           </motion.div>
 

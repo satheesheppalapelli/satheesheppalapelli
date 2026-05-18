@@ -29,7 +29,7 @@ const Sidebar = () => {
               </NavLink>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
               target="_blank"
@@ -38,7 +38,7 @@ const Sidebar = () => {
             >
               Resume
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </aside>

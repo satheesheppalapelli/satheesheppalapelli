@@ -21,6 +21,17 @@ const Navbar = () => {
           </li>
 
           <li>
+            <a
+              href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sidebar-link"
+            >
+              Resume
+            </a>
+          </li>
+
+          <li>
             <Link to="/about">About Me</Link>
           </li>
 
