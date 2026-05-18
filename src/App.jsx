@@ -24,7 +24,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/what-i-do" element={<WhatIDo />} />
         <Route path="/skills" element={<Skills />} />
@@ -34,7 +33,7 @@ function App() {
         <Route path="/experience" element={<Experience />} />
         <Route path="/education" element={<Education />} />
         <Route path="/certification" element={<Certification />} />
-        <Route path="/earlyspark" element={<EarlySpark />} />
+        <Route path="/early-spark" element={<EarlySpark />} />
       </Routes>
     </div>
   );

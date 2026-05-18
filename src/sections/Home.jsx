@@ -51,12 +51,10 @@ const Home = () => {
             <button className="home-btn tertiary" onClick={() => navigate("/projects")}>Projects</button>
             <button className="home-btn quaternary" onClick={() => navigate("/education")}>Education</button>
             <button className="home-btn quinary" onClick={() => navigate("/certification")}>Certification</button>
-            <button className="home-btn senary" onClick={() => navigate("/earlyspark")}>Early Spark</button>
+            <button className="home-btn senary" onClick={() => navigate("/early-spark")}>Early Spark</button>
 
             <a
-              href="/portfolio/Satheesh_Eppalapelli_Resume.pdf"
-              // href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
-              // href={`${process.env.PUBLIC_URL}/Satheesh_Eppalapelli_Resume.pdf`}
+              href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="home-btn septenary"

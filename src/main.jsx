@@ -5,7 +5,7 @@ import App from './App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
+  <Router basename={import.meta.env.BASE_URL}>
     <App />
   </Router>
 );

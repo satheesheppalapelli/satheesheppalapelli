@@ -1,3 +1,4 @@
+/* ---------------- GLOBAL STYLES ---------------- */
 html {
   height: auto;
   scroll-behavior: smooth;
@@ -17,7 +18,7 @@ body {
      overflow-x: hidden;
 }
 
-/*new*/
+/* ---------------- APP LAYOUT ---------------- */
 .app {
   text-align: center;
 }
@@ -220,6 +221,7 @@ z-index: 11;
 }
 
 
+/* ---------------- EXPERIENCE SECTION ---------------- */
 .experience-section {
   background: white;
   padding: 20px 20px;
@@ -292,6 +294,7 @@ z-index: 11;
   line-height: 1.5;
 }
 
+/* ---------------- EDUCATION SECTION ---------------- */
 .education-section {
   /* background: white; */
   padding: 20px 20px;
@@ -429,6 +432,7 @@ z-index: 11;
 .tab-content {
   padding: 0 20px;
 }
+/* ---------------- PROJECTS SECTION ---------------- */
 .projects-section {
   /* background: #fff; */
   padding: 20px 20px;

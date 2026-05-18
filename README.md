@@ -44,10 +44,10 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 ### My Tech Stack Arsenal:
 
 - **Languages:** Java, Go, Python, Sql
-- **Backend:** Spring Boot, Microservices, Apache Kafka, Apache Camel, REST APIs  
-- **Frontend:** ReactJS, Node Js, JavaScript, HTML, CSS3, Bootstrap
+- **Backend:** Spring Boot, Microservices, Hibernate, JPA, Apache Kafka, Apache Camel, REST APIs, GraphQL 
+- **Frontend:** Angular, ReactJS, Node Js, JavaScript, HTML, CSS3, Bootstrap
 - **Cloud & DevOps:** AWS, GCP, Docker, Kubernetes, CI/CD  
-- **Databases:** PostgreSQL, Oracle
+- **Databases:** PostgreSQL, Oracle, Redis
 
 ---
 
