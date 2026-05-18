@@ -12,22 +12,21 @@
 .about-heading span {
   color: #7f56d9;
 }
-.about-intro{
- max-width: 800px;
+.about-intro {
+  max-width: 800px;
   margin: 0 auto 1rem;
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
-
 }
 .about-subtext {
   font-size: 1.2rem;
-  margin-bottom: 1rem;text-align: left;
-    max-width: 800px;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 800px;
   margin: 0 auto 1rem;
   line-height: 1.6;
-
 }
 
 .about-description {
@@ -107,7 +106,7 @@
   }
 }
 
-.name-highlight-company{
+.name-highlight-company {
   font-weight: bold;
   display: inline-block;
   color: #de0f66;

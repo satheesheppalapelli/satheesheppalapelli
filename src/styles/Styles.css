@@ -6,16 +6,12 @@ html {
   max-width: 100vw;
 }
 
-
 body {
-
-  
-
   max-width: 100vw;
   height: auto;
-  font-family: 'Open Sans', sans-serif;
-   scroll-behavior: smooth;/*NEW*/
-     overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth; /*NEW*/
+  overflow-x: hidden;
 }
 
 /* ---------------- APP LAYOUT ---------------- */
@@ -34,7 +30,6 @@ body {
 .back-btn:hover {
   background-color: #555;
 }
-
 
 .home-section {
   height: 100vh;
@@ -62,20 +57,16 @@ body {
   padding: 0 16px;
 }
 
-
-
 .home-text {
   flex: 1;
   padding-right: 2rem;
-
 }
-.home-text p{
- font-size: 2.77778rem;
-    line-height: 3.33333rem;
-
+.home-text p {
+  font-size: 2.77778rem;
+  line-height: 3.33333rem;
 }
 
-  .home-img-wrapper {
+.home-img-wrapper {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -87,7 +78,7 @@ body {
   left: -30px;
   width: 400px;
   height: 400px;
-background: radial-gradient(circle at 30% 30%, #a8edea,#636363,#de0f66);
+  background: radial-gradient(circle at 30% 30%, #a8edea, #636363, #de0f66);
   border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
   z-index: 0;
   filter: blur(1px);
@@ -95,7 +86,7 @@ background: radial-gradient(circle at 30% 30%, #a8edea,#636363,#de0f66);
 }
 
 .home-img {
-   max-width: 400px;
+  max-width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
@@ -104,11 +95,9 @@ background: radial-gradient(circle at 30% 30%, #a8edea,#636363,#de0f66);
   box-shadow: 0 0 30px rgba(255, 76, 96, 0.4);
 }
 
-
 .home-img img:hover {
   transform: scale(1.05);
 }
-
 
 @media (max-width: 768px) {
   .home-img-wrapper {
@@ -135,15 +124,6 @@ background: radial-gradient(circle at 30% 30%, #a8edea,#636363,#de0f66);
   }
 }
 
-
-
-
-
-
-
-
-
-
 .home-content {
   flex: 1;
   min-width: 300px;
@@ -151,8 +131,8 @@ background: radial-gradient(circle at 30% 30%, #a8edea,#636363,#de0f66);
   flex-direction: column;
   align-items: center; /* or center for centered text */
   justify-content: center;
-  text-align:left; /* optional: use 'center' if preferred */
-z-index: 11;
+  text-align: left; /* optional: use 'center' if preferred */
+  z-index: 11;
 }
 
 .home-content h1 {
@@ -163,7 +143,6 @@ z-index: 11;
 }
 
 .home-content h2 {
-
   font-size: 1.5rem;
   margin-bottom: 1rem;
   /* color: #bbbbbb; */
@@ -171,7 +150,6 @@ z-index: 11;
 }
 
 .home-content p {
-    
   /* font-size: 1rem;  */
   max-width: 600px;
   margin: 0 auto 2rem auto;
@@ -181,7 +159,6 @@ z-index: 11;
 }
 
 .home-buttons {
-   
   display: flex;
   justify-content: center;
   gap: 32px;
@@ -191,7 +168,7 @@ z-index: 11;
 .home-btn {
   /* padding: 0.75rem 1.5rem; */
   z-index: 1;
-   font-weight: bold;
+  font-weight: bold;
   padding: 18px 12px;
   background-color: hsl(0, 0%, 2%);
   color: white;
@@ -202,7 +179,7 @@ z-index: 11;
 }
 
 .home-btn:hover {
-  background-color:transparent;
+  background-color: transparent;
   color: black;
   border: 2px solid black;
 }
@@ -210,16 +187,14 @@ z-index: 11;
 .home-btn.outline {
   background-color: transparent;
   border: 2px solid black;
-  border-radius: 25px ;
+  border-radius: 25px;
   color: black;
- 
 }
 
 .home-btn.outline:hover {
   background-color: black;
   color: white;
 }
-
 
 /* ---------------- EXPERIENCE SECTION ---------------- */
 .experience-section {
@@ -233,19 +208,18 @@ z-index: 11;
   font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
-    color: #de0f66;
+  color: #de0f66;
   background: linear-gradient(90deg, #de0f66, #9b30ff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-top: 045px;;
+  margin-top: 045px;
 }
-.section-title-journey{
+.section-title-journey {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0rem;
-   
 }
 .experience-container {
   display: flex;
@@ -372,7 +346,7 @@ z-index: 11;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .section-tabs button {
@@ -394,7 +368,6 @@ z-index: 11;
   padding: 100px 20px;
   min-height: 100vh;
 }
-
 
 .section-heading {
   font-size: 2.5rem;
@@ -576,13 +549,28 @@ z-index: 11;
 }
 
 /* Button colors */
-.home-btn.primary { background-color: #007bff; }
-.home-btn.secondary { background-color: #28a745; }
-.home-btn.tertiary { background-color: #ffc107; color: black; }
-.home-btn.quaternary { background-color: #17a2b8; }
-.home-btn.quinary { background-color: #6f42c1; }
-.home-btn.senary { background-color: #e83e8c; }
-.home-btn.septenary { background-color: #343a40; }
+.home-btn.primary {
+  background-color: #007bff;
+}
+.home-btn.secondary {
+  background-color: #28a745;
+}
+.home-btn.tertiary {
+  background-color: #ffc107;
+  color: black;
+}
+.home-btn.quaternary {
+  background-color: #17a2b8;
+}
+.home-btn.quinary {
+  background-color: #6f42c1;
+}
+.home-btn.senary {
+  background-color: #e83e8c;
+}
+.home-btn.septenary {
+  background-color: #343a40;
+}
 
 .home-btn:hover {
   transform: translateY(-3px);

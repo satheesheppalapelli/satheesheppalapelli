@@ -151,8 +151,8 @@ const Skills = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Senior Software Engineer specializing in distributed systems, cloud-native
-          architectures, and enterprise-grade backend engineering.
+          Senior Software Engineer specializing in distributed systems,
+          cloud-native architectures, and enterprise-grade backend engineering.
         </motion.p>
 
         <div className="skills-grid">

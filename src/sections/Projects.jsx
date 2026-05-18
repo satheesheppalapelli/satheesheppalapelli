@@ -29,7 +29,7 @@ const Projects = () => {
         "Data Science",
       ],
       // link: "https://github.com/your-username/accident-risk-predictor",
-    }
+    },
   ];
 
   return (
@@ -95,8 +95,8 @@ const Projects = () => {
           <h3>Future Work</h3>
           <p>
             Additional enterprise-scale projects including system design case
-            studies, Kafka architecture diagrams, and cloud deployment blueprints
-            will be added here.
+            studies, Kafka architecture diagrams, and cloud deployment
+            blueprints will be added here.
           </p>
         </motion.div>
       </div>

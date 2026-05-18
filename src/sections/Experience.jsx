@@ -23,8 +23,8 @@ const experienceData = [
 
       "Automated CI/CD pipelines using GitHub Actions and Jenkins, reducing deployment effort by 40% through automated build, test, and release workflows.",
 
-      "Improved system observability using Log4j and Google Cloud Monitoring with structured logging and metrics dashboards, reducing incident triage time by 30%."
-    ]
+      "Improved system observability using Log4j and Google Cloud Monitoring with structured logging and metrics dashboards, reducing incident triage time by 30%.",
+    ],
   },
 
   {
@@ -47,8 +47,8 @@ const experienceData = [
 
       "Automated CI/CD pipelines using Jenkins and Docker, reducing deployment failures by 20% and improving release consistency.",
 
-      "Maintained 85%+ test coverage using JUnit and Mockito, ensuring high-quality production releases."
-    ]
+      "Maintained 85%+ test coverage using JUnit and Mockito, ensuring high-quality production releases.",
+    ],
   },
 
   {
@@ -63,8 +63,8 @@ const experienceData = [
 
       "Automated database backup and validation processes to improve data integrity and reduce operational risks.",
 
-      "Improved admissions workflow efficiency by 15% through structured documentation and coordination across departments."
-    ]
+      "Improved admissions workflow efficiency by 15% through structured documentation and coordination across departments.",
+    ],
   },
 
   {
@@ -87,9 +87,9 @@ const experienceData = [
 
       "Performed load and performance testing for NFV deployments ensuring SLA compliance and system stability.",
 
-      "Increased code quality by achieving 80%+ test coverage using JUnit-based unit testing frameworks."
-    ]
-  }
+      "Increased code quality by achieving 80%+ test coverage using JUnit-based unit testing frameworks.",
+    ],
+  },
 ];
 
 const Experience = () => {
@@ -109,7 +109,7 @@ const Experience = () => {
             whileHover={{
               y: -6,
               backgroundColor: "#e0e0e0",
-              boxShadow: "0 12px 24px rgba(0, 0, 0, 0.08)"
+              boxShadow: "0 12px 24px rgba(0, 0, 0, 0.08)",
             }}
           >
             <div className="timeline-dot"></div>

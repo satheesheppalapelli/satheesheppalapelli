@@ -25,9 +25,9 @@
   gap: 2rem;
   padding: 0 10px;
 }
-p{
+p {
   font-size: 1.2rem;
-    text-align: center;
+  text-align: center;
 }
 
 .cert-card {
@@ -43,7 +43,7 @@ p{
 .cert-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .cert-icon {
@@ -56,12 +56,12 @@ p{
   font-weight: 600;
   margin-bottom: 0.5rem;
 } */
-.certification-title{
-    font-size: 2.5rem;
+.certification-title {
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 3rem;
-    color: #de0f66;
+  color: #de0f66;
   background: linear-gradient(90deg, #de0f66, #9b30ff);
   background-clip: text;
   -webkit-background-clip: text;
@@ -87,5 +87,4 @@ p{
 
 .cert-link:hover {
   background-color: #5e3fc2;
-
 }

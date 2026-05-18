@@ -9,8 +9,9 @@ const certifications = [
     issuer: "Google",
     year: "2026",
     // link: "https://www.coursera.org/google",
-    verification: "https://www.credly.com/badges/86880cae-1e19-4fc8-8bda-57cb05dec775/linked_in_profile"
-  }
+    verification:
+      "https://www.credly.com/badges/86880cae-1e19-4fc8-8bda-57cb05dec775/linked_in_profile",
+  },
 ];
 
 const Certification = () => {
@@ -19,7 +20,9 @@ const Certification = () => {
       <h2 className="certification-title">Certifications</h2>
 
       <p className="certification-intro">
-        Here is my certification in foundational Artificial Intelligence concepts, focusing on practical AI applications, responsible AI usage, and core machine learning principles.
+        Here is my certification in foundational Artificial Intelligence
+        concepts, focusing on practical AI applications, responsible AI usage,
+        and core machine learning principles.
       </p>
 
       <div className="certification-grid">

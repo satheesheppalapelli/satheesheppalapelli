@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,15 +11,11 @@ const Navbar = () => {
       className="navbar"
     >
       <div className="nav-container">
-
         <div className="nav-logo">
-          <Link to="/">
-            Satheesh Eppalapelli's Portfolio
-          </Link>
+          <Link to="/">Satheesh Eppalapelli's Portfolio</Link>
         </div>
 
         <ul className="nav-links">
-
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -39,9 +35,7 @@ const Navbar = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-
         </ul>
-
       </div>
     </motion.nav>
   );

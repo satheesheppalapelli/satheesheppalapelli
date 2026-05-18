@@ -9,7 +9,8 @@ const educationData = [
     location: "Maryville, Missouri",
     duration: "Aug 2021 - Dec 2022",
     gpa: "3.70 / 4.0",
-    website: "https://www.nwmissouri.edu/academics/graduate/masters/applied-computer-science.html",
+    website:
+      "https://www.nwmissouri.edu/academics/graduate/masters/applied-computer-science.html",
 
     coursework: [
       "Object Oriented Programming with Java",
@@ -19,9 +20,9 @@ const educationData = [
       "Mobile Computing – iOS",
       "App Design: Patterns and Frameworks",
       "Data Visualization",
-      "Machine Learning"
-    ]
-  }
+      "Machine Learning",
+    ],
+  },
 ];
 
 const Education = () => {
@@ -41,7 +42,7 @@ const Education = () => {
             whileHover={{
               y: -6,
               backgroundColor: "rgba(255,255,255,0.05)",
-              boxShadow: "0 12px 24px rgba(0, 0, 0, 0.08)"
+              boxShadow: "0 12px 24px rgba(0, 0, 0, 0.08)",
             }}
           >
             <div className="timeline-dot" />

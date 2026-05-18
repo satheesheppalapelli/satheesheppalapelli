@@ -86,7 +86,6 @@ const Highlights = () => {
   return (
     <section id="highlights" className="quick-facts">
       <div className="container">
-
         {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -103,7 +102,8 @@ const Highlights = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          Senior Software Engineer specializing in scalable microservices, cloud-native systems, and event-driven architectures.
+          Senior Software Engineer specializing in scalable microservices,
+          cloud-native systems, and event-driven architectures.
         </motion.p>
 
         {/* Grid */}
@@ -128,7 +128,6 @@ const Highlights = () => {
             </motion.div>
           ))}
         </motion.div>
-
       </div>
     </section>
   );

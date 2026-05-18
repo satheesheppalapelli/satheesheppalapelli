@@ -1,21 +1,21 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
 
-import Home from './sections/Home';
-import About from './sections/About';
-import WhatIDo from './sections/WhatIDo';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Highlights from './sections/Highlights';
-import Contact from './sections/Contact';
-import Experience from './sections/Experience';
-import Education from './sections/Education';
-import Certification from './sections/Certification';
-import EarlySpark from './sections/EarlySpark';
+import Home from "./sections/Home";
+import About from "./sections/About";
+import WhatIDo from "./sections/WhatIDo";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Highlights from "./sections/Highlights";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Certification from "./sections/Certification";
+import EarlySpark from "./sections/EarlySpark";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
