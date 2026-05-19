@@ -6,7 +6,7 @@
 
 ---
 
-Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer** who's all about **Java/J2EE, Spring Boot, Microservices, and that cloud-native vibe**.  
+Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Full Stack Developer** who's all about **building scalable web applications, crafting seamless user experiences, and delivering robust backend solutions**.  
 
 ---
 
@@ -14,7 +14,7 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 
 🚀 **5+ years slaying the software game**, dropping scalable solutions across **backend, frontend, and cloud realms**.  
 💻 I build **Spring Boot microservices**, craft **RESTful APIs**, and vibe with **AWS/GCP**, **Docker**, and **Kubernetes**.  
-🌱 Obsessed with **ReactJS frontend magic**, **Machine Learning hacks**, **Agentic AI ** and **LLM Integration**.  
+🌱 Obsessed with **ReactJS frontend magic**, **Machine Learning hacks**, **Agentic AI** and **LLM Integration**.  
 
 ---
 
@@ -26,25 +26,17 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Software Engineer**
 
 ## Key Skills
 
-  **Programming**: Java (J2EE), Python, SQL, JavaScript, TypeScript, C, C++
-
-  **Backend**: Spring Boot, Spring WebFlux, Microservices, REST, GraphQL, Node.js, Express, Spring Data JPA, Hibernate, Apache Camel, Resilience4j, Spring Security
-
-  **Event Streaming**: Apache Kafka, Kafka Streams, GCP Pub/Sub
-
-  **Frontend**: ReactJS, Redux, Angular, RxJS, HTML5, CSS3, Bootstrap
-
-  **Cloud & Infra**: GCP, AWS, Azure, Docker, Kubernetes, Terraform (foundational)
-
-  **DevOps**: Jenkins, Cloudbees, GitHub Actions, GitLab CI, Maven, Gradle, CI/CD pipelines
-
-  **Databases**: PostgreSQL, Oracle, MySQL, Cassandra, Redis
-
-  **Testing & Observability**: JUnit, Mockito, Karate, Log4j, ELK, Splunk, Micrometer, APM
-
-  **ML & Data**: Scikit-learn, Random Forest, Neural Networks, JupyterLab
-  
-  **Tools**: AI Assisted coding, IntelliJ IDEA, Jira, Confluence, ServiceNow, Swagger
+- **Full Stack Development**: Expertise in building scalable and efficient full-stack applications using **Java (J2EE)**, **Spring Boot**,**Anngular** **ReactJS**, and **Node.js**.
+- **Programming Languages**: Proficient in **Java**, **Python**, **SQL**, **JavaScript**, **TypeScript**, **C**, **C++**.
+- **Backend Development**: Skilled in **Spring WebFlux**, **Microservices**, **REST**, **GraphQL**, **Express**, **Spring Data JPA**, **Hibernate**, **Apache Camel**, **Resilience4j**, **Spring Security**.
+- **Frontend Development**: Experienced with **ReactJS**, **Redux**, **Angular**, **RxJS**, **HTML5**, **CSS3**, **Bootstrap**.
+- **Event Streaming**: Hands-on experience with **Apache Kafka**, **Kafka Streams**, **GCP Pub/Sub**.
+- **Cloud & Infrastructure**: Proficient in **GCP**, **AWS**, **Azure**, **Docker**, **Kubernetes**, **Terraform (foundational)**.
+- **DevOps**: Expertise in **Jenkins**, **Cloudbees**, **GitHub Actions**, **GitLab CI**, **Maven**, **Gradle**, **CI/CD pipelines**.
+- **Databases**: Knowledgeable in **PostgreSQL**, **Oracle**, **MySQL**, **Cassandra**, **Redis**.
+- **Testing & Observability**: Proficient in **JUnit**, **Mockito**, **Karate**, **Log4j**, **ELK**, **Splunk**, **Micrometer**, **APM**.
+- **Machine Learning & Data**: Experience with **Scikit-learn**, **Random Forest**, **Neural Networks**, **JupyterLab**.
+- **Tools**: Skilled in **AI Assisted coding**, **IntelliJ IDEA**, **Jira**, **Confluence**, **ServiceNow**, **Swagger**.
 
 ---
 
