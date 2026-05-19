@@ -32,6 +32,21 @@ function App() {
     "/certification",
     "/early-spark",
   ];
+
+  const routes = [
+    { path: "/", element: <Home /> },
+    { path: "/about", element: <About /> },
+    { path: "/what-i-do", element: <WhatIDo /> },
+    { path: "/skills", element: <Skills /> },
+    { path: "/projects", element: <Projects /> },
+    { path: "/highlights", element: <Highlights /> },
+    { path: "/contact", element: <Contact /> },
+    { path: "/experience", element: <Experience /> },
+    { path: "/education", element: <Education /> },
+    { path: "/certification", element: <Certification /> },
+    { path: "/early-spark", element: <EarlySpark /> },
+  ];
+
   const showSidebar = visibleSidebarRoutes.includes(location.pathname) && isLargeScreen;
 
   return (
@@ -41,17 +56,9 @@ function App() {
 
       <main className={showSidebar ? "app-main with-sidebar" : "app-main"}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/what-i-do" element={<WhatIDo />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/highlights" element={<Highlights />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/certification" element={<Certification />} />
-          <Route path="/early-spark" element={<EarlySpark />} />
+          {routes.map(({ path, element }) => (
+            <Route key={path} path={path} element={element} />
+          ))}
         </Routes>
       </main>
     </div>

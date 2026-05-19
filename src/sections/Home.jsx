@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useNavigate } from "react-router-dom";
 import useResponsive from "../hooks/useResponsive";
 import Contact from "./Contact";
+import { homeButtons } from "../data/navigation";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -20,7 +21,6 @@ const Home = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="container home-container">
-          {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,13 +38,15 @@ const Home = () => {
                   2000,
                   "Software Development Engineer",
                   2000,
+                  "Software Developer",
+                  2000,
+                  "Backend Engineer)",
+                  2000,
+                  "Cloud-Native Developer",
+                  2000,
                   "Full Stack Engineer",
                   2000,
-                  "Backend Engineer (Java | Spring Boot)",
-                  2000,
-                  "Cloud-Native Developer (AWS | GCP)",
-                  2000,
-                  "Microservices & Kafka Engineer",
+                  "Full Stack Developer",
                   2000,
                   "Distributed Systems Developer",
                   2000,
@@ -61,62 +63,24 @@ const Home = () => {
               cloud expertise.
             </p>
 
-            {/* NAVIGATION BUTTONS BELOW DESCRIPTION */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 0.8 }}
               className="home-buttons"
             >
-              <button
-                className="home-btn primary"
-                onClick={() => navigate("/skills")}
-              >
-                Skills
-              </button>
-              <button
-                className="home-btn secondary"
-                onClick={() => navigate("/experience")}
-              >
-                Experience
-              </button>
-              <button
-                className="home-btn tertiary"
-                onClick={() => navigate("/projects")}
-              >
-                Projects
-              </button>
-              <button
-                className="home-btn quaternary"
-                onClick={() => navigate("/education")}
-              >
-                Education
-              </button>
-              <button
-                className="home-btn quinary"
-                onClick={() => navigate("/certification")}
-              >
-                Certification
-              </button>
-              <button
-                className="home-btn senary"
-                onClick={() => navigate("/early-spark")}
-              >
-                Early Spark
-              </button>
-{/* 
-              <a
-                href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="home-btn septenary"
-              >
-                Resume
-              </a> */}
+              {homeButtons.map((button) => (
+                <button
+                  key={button.to}
+                  className={`home-btn ${button.className}`}
+                  onClick={() => navigate(button.to)}
+                >
+                  {button.label}
+                </button>
+              ))}
             </motion.div>
           </motion.div>
 
-          {/* RIGHT IMAGE */}
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}

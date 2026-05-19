@@ -21169,55 +21169,241 @@ var motion = /* @__PURE__ */ createMotionProxy({
 	...layout
 }, createDomVisualElement);
 //#endregion
-//#region src/components/Navbar.jsx
-var Navbar = () => {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.nav, {
-		initial: { y: -100 },
-		animate: { y: 0 },
-		transition: { duration: .6 },
-		className: "navbar",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "nav-container",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "nav-logo",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-					to: "/",
-					children: "Satheesh Eppalapelli's Portfolio"
-				})
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
-				className: "nav-links",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/",
-						children: "Home"
-					}) }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: `/Satheesh_Eppalapelli_Resume.pdf`,
-						target: "_blank",
-						rel: "noopener noreferrer",
-						className: "sidebar-link",
-						children: "Resume"
-					}) }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/about",
-						children: "About Me"
-					}) }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/what-i-do",
-						children: "What I Do"
-					}) }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/highlights",
-						children: "Highlights"
-					}) })
-				]
-			})]
-		})
-	});
+//#region node_modules/react-icons/lib/iconContext.mjs
+var DefaultContext = {
+	color: void 0,
+	size: void 0,
+	className: void 0,
+	style: void 0,
+	attr: void 0
 };
+var IconContext = import_react.createContext && /* @__PURE__ */ import_react.createContext(DefaultContext);
 //#endregion
-//#region src/components/Sidebar.jsx
-var navigation$1 = [
+//#region node_modules/react-icons/lib/iconBase.mjs
+var _excluded = [
+	"attr",
+	"size",
+	"title"
+];
+function _objectWithoutProperties(e, t) {
+	if (null == e) return {};
+	var o, r, i = _objectWithoutPropertiesLoose(e, t);
+	if (Object.getOwnPropertySymbols) {
+		var n = Object.getOwnPropertySymbols(e);
+		for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
+	}
+	return i;
+}
+function _objectWithoutPropertiesLoose(r, e) {
+	if (null == r) return {};
+	var t = {};
+	for (var n in r) if ({}.hasOwnProperty.call(r, n)) {
+		if (-1 !== e.indexOf(n)) continue;
+		t[n] = r[n];
+	}
+	return t;
+}
+function _extends() {
+	return _extends = Object.assign ? Object.assign.bind() : function(n) {
+		for (var e = 1; e < arguments.length; e++) {
+			var t = arguments[e];
+			for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
+		}
+		return n;
+	}, _extends.apply(null, arguments);
+}
+function ownKeys(e, r) {
+	var t = Object.keys(e);
+	if (Object.getOwnPropertySymbols) {
+		var o = Object.getOwnPropertySymbols(e);
+		r && (o = o.filter(function(r) {
+			return Object.getOwnPropertyDescriptor(e, r).enumerable;
+		})), t.push.apply(t, o);
+	}
+	return t;
+}
+function _objectSpread(e) {
+	for (var r = 1; r < arguments.length; r++) {
+		var t = null != arguments[r] ? arguments[r] : {};
+		r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
+			_defineProperty(e, r, t[r]);
+		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+			Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+		});
+	}
+	return e;
+}
+function _defineProperty(e, r, t) {
+	return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+		value: t,
+		enumerable: !0,
+		configurable: !0,
+		writable: !0
+	}) : e[r] = t, e;
+}
+function _toPropertyKey(t) {
+	var i = _toPrimitive(t, "string");
+	return "symbol" == typeof i ? i : i + "";
+}
+function _toPrimitive(t, r) {
+	if ("object" != typeof t || !t) return t;
+	var e = t[Symbol.toPrimitive];
+	if (void 0 !== e) {
+		var i = e.call(t, r || "default");
+		if ("object" != typeof i) return i;
+		throw new TypeError("@@toPrimitive must return a primitive value.");
+	}
+	return ("string" === r ? String : Number)(t);
+}
+function Tree2Element(tree) {
+	return tree && tree.map((node, i) => /* @__PURE__ */ import_react.createElement(node.tag, _objectSpread({ key: i }, node.attr), Tree2Element(node.child)));
+}
+function GenIcon(data) {
+	return (props) => /* @__PURE__ */ import_react.createElement(IconBase, _extends({ attr: _objectSpread({}, data.attr) }, props), Tree2Element(data.child));
+}
+function IconBase(props) {
+	var elem = (conf) => {
+		var { attr, size, title } = props, svgProps = _objectWithoutProperties(props, _excluded);
+		var computedSize = size || conf.size || "1em";
+		var className;
+		if (conf.className) className = conf.className;
+		if (props.className) className = (className ? className + " " : "") + props.className;
+		return /* @__PURE__ */ import_react.createElement("svg", _extends({
+			stroke: "currentColor",
+			fill: "currentColor",
+			strokeWidth: "0"
+		}, conf.attr, attr, svgProps, {
+			className,
+			style: _objectSpread(_objectSpread({ color: props.color || conf.color }, conf.style), props.style),
+			height: computedSize,
+			width: computedSize,
+			xmlns: "http://www.w3.org/2000/svg"
+		}), title && /* @__PURE__ */ import_react.createElement("title", null, title), props.children);
+	};
+	return IconContext !== void 0 ? /* @__PURE__ */ import_react.createElement(IconContext.Consumer, null, (conf) => elem(conf)) : elem(DefaultContext);
+}
+//#endregion
+//#region node_modules/react-icons/fa/index.mjs
+function FaLinkedin(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 448 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaKaggle(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 320 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaGithub(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 496 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaServer(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 512 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaProjectDiagram(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 640 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaMailBulk(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 576 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaLaptopCode(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 640 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaDatabase(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 448 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z" },
+			"child": []
+		}]
+	})(props);
+}
+function FaCode(props) {
+	return GenIcon({
+		"tag": "svg",
+		"attr": { "viewBox": "0 0 640 512" },
+		"child": [{
+			"tag": "path",
+			"attr": { "d": "M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" },
+			"child": []
+		}]
+	})(props);
+}
+//#endregion
+//#region src/data/navigation.jsx
+var mainNavLinks = [
+	{
+		label: "Home",
+		to: "/"
+	},
+	{
+		label: "About Me",
+		to: "/about"
+	},
+	{
+		label: "What I Do",
+		to: "/what-i-do"
+	},
+	{
+		label: "Highlights",
+		to: "/highlights"
+	}
+];
+var sidebarLinks = [
 	{
 		label: "Skills",
 		to: "/skills"
@@ -21243,6 +21429,103 @@ var navigation$1 = [
 		to: "/early-spark"
 	}
 ];
+var homeButtons = [
+	{
+		label: "Skills",
+		to: "/skills",
+		className: "primary"
+	},
+	{
+		label: "Experience",
+		to: "/experience",
+		className: "secondary"
+	},
+	{
+		label: "Projects",
+		to: "/projects",
+		className: "tertiary"
+	},
+	{
+		label: "Education",
+		to: "/education",
+		className: "quaternary"
+	},
+	{
+		label: "Certification",
+		to: "/certification",
+		className: "quinary"
+	},
+	{
+		label: "Early Spark",
+		to: "/early-spark",
+		className: "senary"
+	}
+];
+var contactLinks = [
+	{
+		label: "Email",
+		href: "mailto:eppalapellisatheesh21@gmail.com",
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaMailBulk, { size: 24 })
+	},
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/satheesheppalapelli",
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaLinkedin, { size: 24 })
+	},
+	{
+		label: "GitHub",
+		href: "https://github.com/satheesheppalapelli",
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaGithub, { size: 24 })
+	},
+	{
+		label: "LeetCode",
+		href: "https://leetcode.com/satheesheppalapelli",
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaCode, { size: 24 })
+	},
+	{
+		label: "Kaggle",
+		href: "https://www.kaggle.com/satheesheppalapelli",
+		icon: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaKaggle, { size: 24 })
+	}
+];
+var resumeLink = {
+	label: "Resume",
+	href: `/Satheesh_Eppalapelli_Resume.pdf`
+};
+//#endregion
+//#region src/components/Navbar.jsx
+var Navbar = () => {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.nav, {
+		initial: { y: -100 },
+		animate: { y: 0 },
+		transition: { duration: .6 },
+		className: "navbar",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			className: "nav-container",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				className: "nav-logo",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					children: "Satheesh Eppalapelli's Portfolio"
+				})
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+				className: "nav-links",
+				children: [mainNavLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: link.to,
+					children: link.label
+				}) }, link.to)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: resumeLink.href,
+					target: "_blank",
+					rel: "noopener noreferrer",
+					className: "sidebar-link",
+					children: resumeLink.label
+				}) })]
+			})]
+		})
+	});
+};
+//#endregion
+//#region src/components/Sidebar.jsx
 var Sidebar = () => {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("aside", {
 		className: "sidebar",
@@ -21250,7 +21533,7 @@ var Sidebar = () => {
 			className: "sidebar-inner",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "sidebar-label" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 				className: "sidebar-links",
-				children: navigation$1.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NavLink, {
+				children: sidebarLinks.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(NavLink, {
 					to: item.to,
 					className: ({ isActive }) => isActive ? "sidebar-link active" : "sidebar-link",
 					children: item.label
@@ -21663,221 +21946,6 @@ var m = (0, import_react.memo)((0, import_react.forwardRef)((function(o, a) {
 	return !0;
 }));
 //#endregion
-//#region node_modules/react-icons/lib/iconContext.mjs
-var DefaultContext = {
-	color: void 0,
-	size: void 0,
-	className: void 0,
-	style: void 0,
-	attr: void 0
-};
-var IconContext = import_react.createContext && /* @__PURE__ */ import_react.createContext(DefaultContext);
-//#endregion
-//#region node_modules/react-icons/lib/iconBase.mjs
-var _excluded = [
-	"attr",
-	"size",
-	"title"
-];
-function _objectWithoutProperties(e, t) {
-	if (null == e) return {};
-	var o, r, i = _objectWithoutPropertiesLoose(e, t);
-	if (Object.getOwnPropertySymbols) {
-		var n = Object.getOwnPropertySymbols(e);
-		for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
-	}
-	return i;
-}
-function _objectWithoutPropertiesLoose(r, e) {
-	if (null == r) return {};
-	var t = {};
-	for (var n in r) if ({}.hasOwnProperty.call(r, n)) {
-		if (-1 !== e.indexOf(n)) continue;
-		t[n] = r[n];
-	}
-	return t;
-}
-function _extends() {
-	return _extends = Object.assign ? Object.assign.bind() : function(n) {
-		for (var e = 1; e < arguments.length; e++) {
-			var t = arguments[e];
-			for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
-		}
-		return n;
-	}, _extends.apply(null, arguments);
-}
-function ownKeys(e, r) {
-	var t = Object.keys(e);
-	if (Object.getOwnPropertySymbols) {
-		var o = Object.getOwnPropertySymbols(e);
-		r && (o = o.filter(function(r) {
-			return Object.getOwnPropertyDescriptor(e, r).enumerable;
-		})), t.push.apply(t, o);
-	}
-	return t;
-}
-function _objectSpread(e) {
-	for (var r = 1; r < arguments.length; r++) {
-		var t = null != arguments[r] ? arguments[r] : {};
-		r % 2 ? ownKeys(Object(t), !0).forEach(function(r) {
-			_defineProperty(e, r, t[r]);
-		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
-			Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
-		});
-	}
-	return e;
-}
-function _defineProperty(e, r, t) {
-	return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
-		value: t,
-		enumerable: !0,
-		configurable: !0,
-		writable: !0
-	}) : e[r] = t, e;
-}
-function _toPropertyKey(t) {
-	var i = _toPrimitive(t, "string");
-	return "symbol" == typeof i ? i : i + "";
-}
-function _toPrimitive(t, r) {
-	if ("object" != typeof t || !t) return t;
-	var e = t[Symbol.toPrimitive];
-	if (void 0 !== e) {
-		var i = e.call(t, r || "default");
-		if ("object" != typeof i) return i;
-		throw new TypeError("@@toPrimitive must return a primitive value.");
-	}
-	return ("string" === r ? String : Number)(t);
-}
-function Tree2Element(tree) {
-	return tree && tree.map((node, i) => /* @__PURE__ */ import_react.createElement(node.tag, _objectSpread({ key: i }, node.attr), Tree2Element(node.child)));
-}
-function GenIcon(data) {
-	return (props) => /* @__PURE__ */ import_react.createElement(IconBase, _extends({ attr: _objectSpread({}, data.attr) }, props), Tree2Element(data.child));
-}
-function IconBase(props) {
-	var elem = (conf) => {
-		var { attr, size, title } = props, svgProps = _objectWithoutProperties(props, _excluded);
-		var computedSize = size || conf.size || "1em";
-		var className;
-		if (conf.className) className = conf.className;
-		if (props.className) className = (className ? className + " " : "") + props.className;
-		return /* @__PURE__ */ import_react.createElement("svg", _extends({
-			stroke: "currentColor",
-			fill: "currentColor",
-			strokeWidth: "0"
-		}, conf.attr, attr, svgProps, {
-			className,
-			style: _objectSpread(_objectSpread({ color: props.color || conf.color }, conf.style), props.style),
-			height: computedSize,
-			width: computedSize,
-			xmlns: "http://www.w3.org/2000/svg"
-		}), title && /* @__PURE__ */ import_react.createElement("title", null, title), props.children);
-	};
-	return IconContext !== void 0 ? /* @__PURE__ */ import_react.createElement(IconContext.Consumer, null, (conf) => elem(conf)) : elem(DefaultContext);
-}
-//#endregion
-//#region node_modules/react-icons/fa/index.mjs
-function FaLinkedin(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 448 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaKaggle(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 320 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaGithub(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 496 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaServer(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 512 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M480 160H32c-17.673 0-32-14.327-32-32V64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm112 248H32c-17.673 0-32-14.327-32-32v-64c0-17.673 14.327-32 32-32h448c17.673 0 32 14.327 32 32v64c0 17.673-14.327 32-32 32zm-48-88c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24zm-64 0c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaProjectDiagram(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 640 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaMailBulk(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 576 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaLaptopCode(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 640 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M255.03 261.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L253.25 192l35.71-35.72c6.25-6.25 6.25-16.38 0-22.63l-11.31-11.31c-6.25-6.25-16.38-6.25-22.63 0l-58.34 58.34c-6.25 6.25-6.25 16.38 0 22.63l58.35 58.34zm96.01-11.3l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0l58.34-58.34c6.25-6.25 6.25-16.38 0-22.63l-58.34-58.34c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63L386.75 192l-35.71 35.72c-6.25 6.25-6.25 16.38 0 22.63zM624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaDatabase(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 448 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z" },
-			"child": []
-		}]
-	})(props);
-}
-function FaCode(props) {
-	return GenIcon({
-		"tag": "svg",
-		"attr": { "viewBox": "0 0 640 512" },
-		"child": [{
-			"tag": "path",
-			"attr": { "d": "M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" },
-			"child": []
-		}]
-	})(props);
-}
-//#endregion
 //#region src/sections/Contact.jsx
 var Contact = () => {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
@@ -21897,7 +21965,7 @@ var Contact = () => {
 				},
 				transition: { duration: .6 },
 				children: "Let's Connect"
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 				initial: {
 					opacity: 0,
 					y: 50
@@ -21911,41 +21979,13 @@ var Contact = () => {
 					delay: .2
 				},
 				className: "contact-links",
-				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "mailto:eppalapellisatheesh21@gmail.com",
-						className: "contact-link",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaMailBulk, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Email" })]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "https://www.linkedin.com/in/satheesheppalapelli",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						className: "contact-link",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaLinkedin, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "LinkedIn" })]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "https://github.com/satheesheppalapelli",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						className: "contact-link",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaGithub, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "GitHub" })]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "https://leetcode.com/satheesheppalapelli",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						className: "contact-link",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaCode, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "LeetCode" })]
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "https://www.kaggle.com/satheesheppalapelli",
-						target: "_blank",
-						rel: "noopener noreferrer",
-						className: "contact-link",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(FaKaggle, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Kaggle" })]
-					})
-				]
+				children: contactLinks.map((link) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+					href: link.href,
+					target: "_blank",
+					rel: "noopener noreferrer",
+					className: "contact-link",
+					children: [link.icon, /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: link.label })]
+				}, link.label))
 			})]
 		})
 	});
@@ -21997,13 +22037,15 @@ var Home = () => {
 									2e3,
 									"Software Development Engineer",
 									2e3,
+									"Software Developer",
+									2e3,
+									"Backend Engineer)",
+									2e3,
+									"Cloud-Native Developer",
+									2e3,
 									"Full Stack Engineer",
 									2e3,
-									"Backend Engineer (Java | Spring Boot)",
-									2e3,
-									"Cloud-Native Developer (AWS | GCP)",
-									2e3,
-									"Microservices & Kafka Engineer",
+									"Full Stack Developer",
 									2e3,
 									"Distributed Systems Developer",
 									2e3
@@ -22017,7 +22059,7 @@ var Home = () => {
 							className: "home-description",
 							children: "Turning complex business and technical problems into high-performance, user-friendly web solutions with full-stack and cloud expertise."
 						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 							initial: { opacity: 0 },
 							animate: { opacity: 1 },
 							transition: {
@@ -22025,38 +22067,11 @@ var Home = () => {
 								delay: .8
 							},
 							className: "home-buttons",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn primary",
-									onClick: () => navigate("/skills"),
-									children: "Skills"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn secondary",
-									onClick: () => navigate("/experience"),
-									children: "Experience"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn tertiary",
-									onClick: () => navigate("/projects"),
-									children: "Projects"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn quaternary",
-									onClick: () => navigate("/education"),
-									children: "Education"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn quinary",
-									onClick: () => navigate("/certification"),
-									children: "Certification"
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
-									className: "home-btn senary",
-									onClick: () => navigate("/early-spark"),
-									children: "Early Spark"
-								})
-							]
+							children: homeButtons.map((button) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								className: `home-btn ${button.className}`,
+								onClick: () => navigate(button.to),
+								children: button.label
+							}, button.to))
 						})
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
@@ -23206,14 +23221,61 @@ var Highlights = () => {
 function App() {
 	const location = useLocation();
 	const isLargeScreen = useResponsive() === "desktop";
-	const showSidebar = [
+	const visibleSidebarRoutes = [
 		"/skills",
 		"/experience",
 		"/projects",
 		"/education",
 		"/certification",
 		"/early-spark"
-	].includes(location.pathname) && isLargeScreen;
+	];
+	const routes = [
+		{
+			path: "/",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Home, {})
+		},
+		{
+			path: "/about",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(About, {})
+		},
+		{
+			path: "/what-i-do",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(WhatIDo, {})
+		},
+		{
+			path: "/skills",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Skills, {})
+		},
+		{
+			path: "/projects",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Projects, {})
+		},
+		{
+			path: "/highlights",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Highlights, {})
+		},
+		{
+			path: "/contact",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Contact, {})
+		},
+		{
+			path: "/experience",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Experience, {})
+		},
+		{
+			path: "/education",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Education, {})
+		},
+		{
+			path: "/certification",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Certification, {})
+		},
+		{
+			path: "/early-spark",
+			element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(EarlySpark, {})
+		}
+	];
+	const showSidebar = visibleSidebarRoutes.includes(location.pathname) && isLargeScreen;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "App",
 		children: [
@@ -23221,52 +23283,10 @@ function App() {
 			showSidebar && /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Sidebar, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", {
 				className: showSidebar ? "app-main with-sidebar" : "app-main",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Routes, { children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Home, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/about",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(About, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/what-i-do",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(WhatIDo, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/skills",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Skills, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/projects",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Projects, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/highlights",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Highlights, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/contact",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Contact, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/experience",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Experience, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/education",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Education, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/certification",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Certification, {})
-					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
-						path: "/early-spark",
-						element: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(EarlySpark, {})
-					})
-				] })
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Routes, { children: routes.map(({ path, element }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Route, {
+					path,
+					element
+				}, path)) })
 			})
 		]
 	});

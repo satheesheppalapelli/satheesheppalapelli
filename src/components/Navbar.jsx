@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { mainNavLinks, resumeLink } from "../data/navigation";
 
 const Navbar = () => {
   return (
@@ -16,31 +17,21 @@ const Navbar = () => {
         </div>
 
         <ul className="nav-links">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
+          {mainNavLinks.map((link) => (
+            <li key={link.to}>
+              <Link to={link.to}>{link.label}</Link>
+            </li>
+          ))}
 
           <li>
             <a
-              href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
+              href={resumeLink.href}
               target="_blank"
               rel="noopener noreferrer"
               className="sidebar-link"
             >
-              Resume
+              {resumeLink.label}
             </a>
-          </li>
-
-          <li>
-            <Link to="/about">About Me</Link>
-          </li>
-
-          <li>
-            <Link to="/what-i-do">What I Do</Link>
-          </li>
-          
-          <li>
-            <Link to="/highlights">Highlights</Link>
           </li>
         </ul>
       </div>
