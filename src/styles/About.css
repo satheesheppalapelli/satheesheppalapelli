@@ -1,0 +1,131 @@
+.about-section {
+  padding: 100px 20px;
+  /* background: #fff; */
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-heading span {
+  color: #7f56d9;
+}
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: left;
+}
+.about-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 1rem;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  background: #f9f9f9;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 320px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-link {
+  color: #7f56d9;
+  font-weight: bold;
+}
+
+.name-highlight {
+  display: inline-block;
+  color: #de0f66;
+  background: linear-gradient(90deg, #de0f66, #636363);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translateY(0px);
+  }
+  25% {
+    transform: rotateZ(2deg) translateY(-2px);
+  }
+  50% {
+    transform: rotateZ(0deg) translateY(1px);
+  }
+  75% {
+    transform: rotateZ(-2deg) translateY(-2px);
+  }
+  100% {
+    transform: rotateZ(0deg) translateY(0px);
+  }
+}
+
+.name-highlight-company {
+  font-weight: bold;
+  display: inline-block;
+  color: #de0f66;
+}
+
+.university-link {
+  color: #7f56d9;
+  text-decoration: none;
+}
+
+.university-link:hover {
+  text-decoration: underline;
+}
+
+.link-no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-no-underline:hover {
+  text-decoration: underline;
+}

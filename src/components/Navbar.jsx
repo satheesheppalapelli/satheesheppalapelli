@@ -1,5 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,23 +12,37 @@ const Navbar = () => {
     >
       <div className="nav-container">
         <div className="nav-logo">
-          <a href="#hero">Satheesh</a>
+          <Link to="/">Satheesh Eppalapelli's Portfolio</Link>
         </div>
+
         <ul className="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+
+          <li>
+            <a
+              href={`${import.meta.env.BASE_URL}Satheesh_Eppalapelli_Resume.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sidebar-link"
+            >
+              Resume
+            </a>
+          </li>
+
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+
+          <li>
+            <Link to="/what-i-do">What I Do</Link>
+          </li>
+          
+          <li>
+            <Link to="/highlights">Highlights</Link>
+          </li>
         </ul>
-        <a
-          href="/resume.pdf"
-          className="btn secondary resume-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
       </div>
     </motion.nav>
   );
