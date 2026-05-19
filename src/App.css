@@ -63,15 +63,13 @@ input {
 }
 
 .btn.secondary {
-  border: 1px solid rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   color: white;
-  background: rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .btn.secondary:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .resume-button {
@@ -214,9 +212,8 @@ input {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
   list-style: none;
-  margin-left: auto;
 }
 
 .nav-links a {
@@ -294,17 +291,17 @@ input {
   align-items: center;
 }
 
-.home-content {
+.hero-content {
   max-width: 560px;
 }
 
-.home-content h1 {
+.hero-content h1 {
   font-size: clamp(2.5rem, 4vw, 4.25rem);
   line-height: 1.02;
   margin-bottom: 1.2rem;
 }
 
-.home-title {
+.hero-title {
   display: inline-flex;
   font-size: clamp(1.35rem, 2vw, 2rem);
   color: #ffda63;
@@ -312,7 +309,7 @@ input {
   margin-bottom: 1.4rem;
 }
 
-.home-description {
+.hero-description {
   font-size: 1.05rem;
   line-height: 1.9;
   max-width: 44rem;
@@ -320,7 +317,7 @@ input {
   color: rgba(255, 255, 255, 0.92);
 }
 
-.home-meta {
+.hero-meta {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -333,17 +330,17 @@ input {
   margin-bottom: 2rem;
 }
 
-.home-meta strong {
+.hero-meta strong {
   color: white;
 }
 
-.home-buttons {
+.hero-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.home-image {
+.hero-image {
   position: relative;
   display: flex;
   justify-content: center;
@@ -362,7 +359,7 @@ input {
   filter: blur(20px);
 }
 
-.home-image img {
+.hero-image img {
   width: min(100%, 420px);
   height: auto;
   border-radius: 40px;
@@ -532,11 +529,11 @@ section h2 {
 }
 
 @media (max-width: 1024px) {
-  .home-container {
+  .hero-container {
     grid-template-columns: 1fr;
   }
 
-  .home-image {
+  .hero-image {
     order: -1;
   }
 
