@@ -12,9 +12,9 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Full Stack Develope
 
 ## About Me
 
-🚀 **5+ years slaying the software game**, dropping scalable solutions across **backend, frontend, and cloud realms**.  
-💻 I build **Spring Boot microservices**, craft **RESTful APIs**, and vibe with **AWS/GCP**, **Docker**, and **Kubernetes**.  
-🌱 Obsessed with **ReactJS frontend magic**, **Machine Learning hacks**, **Agentic AI** and **LLM Integration**.  
+🚀 Slaying the software game, dropping scalable solutions across **backend, frontend, and cloud realms**.
+💻 I build Spring Boot **microservices**, craft **RESTful APIs**, and vibe with **AWS/GCP, Docker, and Kubernetes**.
+🌱 Obsessed with **ReactJS and Angular frontend** magic, **Machine Learning** hacks, **Agentic AI**, and **LLM integration**.
 
 ---
 
@@ -52,10 +52,11 @@ Welcome to my GitHub lair! I'm **Satheesh Eppalapelli**, a **Full Stack Develope
   M.S. in Computer Science — Northwest Missouri State University, Dec 2022
 
 ---
+<!--
 ## Portfolio
 
-Check out my portfolio at [https://satheesheppalapelli.github.io/](https://satheesheppalapelli.github.io)
-
+//Check out my portfolio at [https://satheesheppalapelli.github.io/](https://satheesheppalapelli.github.io)
+-->
 ---
 
 ## Let's Link Up
