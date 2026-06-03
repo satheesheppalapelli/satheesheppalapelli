@@ -2,14 +2,14 @@
   "name": "satheesheppalapelli",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://satheesheppalapelli.github.io",
+  "homepage": "https://satheesheppalapelli.github.io/satheesheppalapelli/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "test": "vitest run",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build",
     "test:watch": "vitest",
     "lint": "eslint .",
     "preview": "vite preview"
